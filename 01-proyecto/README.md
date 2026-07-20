@@ -6,8 +6,7 @@
 4. [Objetivo general](#objetivo-general)
 5. [Objetivos específicos](#objetivos-específicos)
 6. [Tecnologías propuestas](#tecnologías-propuestas)
-7. [Cronograma de desarrollo](#cronograma-de-desarrollo)
-8. [Entregables](#entregables)
+
 
 
 
