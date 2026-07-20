@@ -45,3 +45,17 @@ De igual manera el proyecto ha sido elaborado con una arquitectura modular, lo q
 Desarrollar una plataforma web para generar y analizar modelos de interconexión de centros poblados del Perú mediante el uso de información geoespacial y algoritmos de teoría de grafos, esto para poder visualizar propuestas de redes de distribución eléctrica óptimas y comparar el desempeño de diferentes algoritmos de optimización, siendo estos Kruskal y Prim.
 
 ## Objetivos específicos
+
+1.  Recolectar, procesar y organizar la información geoespacial de los centros poblados del Perú obtenida de fuentes oficiales, con el fin de contar con un conjunto de datos estructurado para el análisis, sin tener que inventar datos.
+
+2. Diseñar un mecanismo de selección geográfica mediante filtros jerárquicos por departamento, provincia y distrito, que permita delimitar la información utilizada en la generación de modelos de interconexión.
+
+3. Implementar una estructura espacial basada en árboles k-d (KDTree) para optimizar la búsqueda de centros poblados cercanos y reducir el costo computacional en la construcción del grafo.
+
+4. Aplicar los algoritmos de árboles de expansión mínima de Kruskal y Prim para generar propuestas de interconexión entre centros poblados a partir del grafo construido.
+
+5. Comparar el desempeño de los algoritmos de Kruskal y Prim mediante métricas como tiempo de ejecución, cantidad de aristas procesadas y escalabilidad sobre distintos escenarios geográficos.
+
+6. Desarrollar una API que permita gestionar la información geoespacial, ejecutar los algoritmos y exponer los resultados para su consumo por aplicaciones externas.
+
+7. Implementar una interfaz web que permita visualizar los centros poblados, las redes generadas y los resultados de la comparación de algoritmos sobre un mapa interactivo.
