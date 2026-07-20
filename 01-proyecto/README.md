@@ -40,3 +40,8 @@ Desde el punto de vista académico, el proyecto permitirá aplicar algoritmos cl
 Desde el punto de vista tecnológico, el desarrollo de una API y una interfaz web facilitará la interacción con los datos y la visualización de los resultados, haciendo de esto una herramienta que permita explorar diferentes regiones del país y analizar las redes generadas de manera intuitiva.
 
 De igual manera el proyecto ha sido elaborado con una arquitectura modular, lo que permitirá incorporar nuevas regiones, conjuntos de datos o algoritmos de optimización en futuras versiones sin modificar significativamente la estructura general del sistema.
+
+## Objetivo general
+Desarrollar una plataforma web para generar y analizar modelos de interconexión de centros poblados del Perú mediante el uso de información geoespacial y algoritmos de teoría de grafos, esto para poder visualizar propuestas de redes de distribución eléctrica óptimas y comparar el desempeño de diferentes algoritmos de optimización, siendo estos Kruskal y Prim.
+
+## Objetivos específicos
