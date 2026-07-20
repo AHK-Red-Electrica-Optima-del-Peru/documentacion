@@ -13,11 +13,11 @@
 
 ## Descripción del proyecto 
 
-El proyecto tiene como propósito desarrollar una plataforma web para el análisis y la generación de propuestas de diseñon de distribución de red eléctrica utilizando información geoespacial de los centros poblados del Perú.
+El proyecto tiene como propósito desarrollar una plataforma web para el análisis y la generación de modelos de interconexión entre centros poblados del Perú, empleando información geoespacial y algoritmos de teoría de grafos. La plataforma busca ofrecer un entorno que facilite el estudio de propuestas de redes de distribución aproximadas, permitiendo evaluar distintas alternativas de conexión sobre datos geográficos reales.
 
 La aplicación utilizará datos obtenidos de fuentes oficiales, como GEO GPS Perú, los cuales contienen información geográfica de los centros poblados a nivel nacional. A partir de estos datos, el sistema permitirá seleccionar una ubicación específica mediante filtros como departamento, provincia y distrito u otra clasificación, para construir un grafo representativo de los centros poblados pertenecientes a la zona seleccionada.
 
-Dentro del proceso de optimización, se utilizará la estructura espacial KDTree para realizar búsquedas eficientes de vecinos cercanos, reduciendo la cantidad de conexiones necesarias para la construcción del grafo que va a representar mediante nodos que vendrían a ser los centros poblados. Después de esto se implementarán los algoritmos de Kruskal y Prim para generar árboles de expansión mínima, permitiendo comparar su desempeño mediante métricas como tiempo de ejecución, número de aristas procesadas y longitud total de la red generada.
+Con el propósito de mejorar la eficiencia en el procesamiento de la información, el sistema incorporará una estructura espacial basada en árboles k-d (KDTree), la cual permitirá optimizar la búsqueda de centros poblados cercanos y reducir el número de conexiones candidatas durante la construcción del grafo. Sobre dicho grafo se aplicarán los algoritmos de árboles de expansión mínima de Kruskal y Prim para generar propuestas de interconexión, posibilitando además la comparación de su desempeño mediante métricas como el tiempo de ejecución, la cantidad de aristas procesadas y la longitud total de la red obtenida.
 
 Los resultados obtenidos serán expuestos mediante una API desarrollada con FastAPI y visualizados en una interfaz web interactiva, permitiendo al usuario explorar los datos geográficos y analizar las redes generadas.
 
