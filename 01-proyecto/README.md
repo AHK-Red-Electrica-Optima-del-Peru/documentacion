@@ -59,3 +59,74 @@ Desarrollar una plataforma web para generar y analizar modelos de interconexión
 6. Desarrollar una API que permita gestionar la información geoespacial, ejecutar los algoritmos y exponer los resultados para su consumo por aplicaciones externas.
 
 7. Implementar una interfaz web que permita visualizar los centros poblados, las redes generadas y los resultados de la comparación de algoritmos sobre un mapa interactivo.
+
+
+## 7. Tecnologías propuestas
+
+Para el desarrollo del proyecto se utilizarán un conjunto de tecnologías orientadas al procesamiento de información geoespacial, la implementación de algoritmos de optimización y el desarrollo de una aplicación web. La selección de cada herramienta responde a criterios de rendimiento, integración y uso de bibliotecas especializadas para el tratamiento de grafos y datos geográficos.
+
+<table>
+    <thead>
+        <tr>
+            <th>Tecnología</th>
+            <th>Propósito dentro del proyecto</th>
+            <th>Justificación</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Python</strong></td>
+            <td>Lenguaje principal para el desarrollo del backend y la implementación de algoritmos.</td>
+            <td>Cuenta con un amplio ecosistema de bibliotecas para ciencia de datos, algoritmos, procesamiento geoespacial y desarrollo de APIs, en este caso FastAPI.</td>
+        </tr>
+        <tr>
+            <td><strong>FastAPI</strong></td>
+            <td>Desarrollo de la API REST.</td>
+            <td>Permite construir servicios web de alto rendimiento, con documentación automática y una arquitectura moderna basada en Python.</td>
+        </tr>
+        <tr>
+            <td><strong>React + Vite</strong></td>
+            <td>Desarrollo de la interfaz web.</td>
+            <td>Facilita la creación de interfaces dinámicas e interactivas para la visualización de información geográfica y los resultados de los algoritmos.</td>
+        </tr>
+        <tr>
+            <td><strong>PostgreSQL + PostGIS</strong></td>
+            <td>Almacenamiento de información geoespacial.</td>
+            <td>Facilita la gestión de datos geográficos y permite realizar consultas espaciales de manera eficiente.</td>
+        </tr>
+        <tr>
+            <td><strong>Pandas</strong></td>
+            <td>Procesamiento y limpieza de datos.</td>
+            <td>Permite transformar y preparar los datos provenientes de GEO GPS Perú antes de su utilización dentro del sistema.</td>
+        </tr>
+        <tr>
+            <td><strong>SciPy (KDTree)</strong></td>
+            <td>Optimización de búsquedas espaciales.</td>
+            <td>Proporciona una implementación eficiente del algoritmo KDTree para localizar vecinos cercanos y reducir el número de conexiones candidatas.</td>
+        </tr>
+        <tr>
+            <td><strong>NetworkX</strong></td>
+            <td>Construcción y análisis de grafos.</td>
+            <td>Facilita la representación de grafos y la implementación de algoritmos clásicos como Kruskal y Prim.</td>
+        </tr>
+        <tr>
+            <td><strong>Git y GitHub</strong></td>
+            <td>Control de versiones y gestión del proyecto.</td>
+            <td>Permiten mantener un historial del desarrollo, facilitar la colaboración y documentar la evolución del proyecto.</td>
+        </tr>
+        <tr>
+            <td><strong>Docker (opcional)</strong></td>
+            <td>Contenerización de la aplicación.</td>
+            <td>Facilita el despliegue del backend y garantiza un entorno de ejecución reproducible.</td>
+        </tr>
+    </tbody>
+</table>
+
+Además de las tecnologías mencionadas, el proyecto utilizará información geoespacial proveniente de **GEO GPS Perú** como fuente principal de datos sobre centros poblados del Perú. Estos datos serán procesados para construir modelos de interconexión sobre los cuales se aplicarán técnicas de optimización espacial y algoritmos de teoría de grafos.
+
+Los algoritmos principales considerados para el desarrollo son:
+
+- **KDTree**, empleado para optimizar la búsqueda de vecinos cercanos y reducir el costo computacional durante la construcción del grafo.
+- **Kruskal**, utilizado para generar árboles de expansión mínima mediante una estrategia basada en la selección de aristas de menor peso.
+- **Prim**, implementado como algoritmo alternativo para la generación de árboles de expansión mínima, permitiendo comparar su desempeño con Kruskal en distintos escenarios geográficos.
+
